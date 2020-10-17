@@ -1,4 +1,5 @@
 
+
 # <-- COMMENTS -->
 
 # Use Alt + R to run the code
@@ -133,3 +134,75 @@ puts "   PrograMMing   ".strip()
 puts ""
 
 # <-- MATH & NUMBERS -->
+
+puts 5.8394
+puts -8925
+puts 8 + 3
+puts 59 - 34
+puts 9 * 3
+puts 8 / 2
+puts 10 % 3 # -> 1
+puts 2 ** 3 # 2 raised by 3  -> 2*2*2
+puts ""
+# <-- NUMBER METHODS -->
+
+# Number to String
+num1 = 34
+puts ("I am " + num1.to_s) # .to_s = to string
+
+# Return the absolute Value
+num2 = -23
+puts num2.abs() # -> 23
+
+# rounding NUMBER
+num3 = 45.2746
+puts num3.round() # -> 45
+num4 = 45.8373
+puts num4.round() # -> 46
+
+# rounding UP
+num5 = 20.000005
+puts num5.ceil() # -> 21
+
+#rounding DOWN
+num6 = 20.999999
+puts num6.floor() # -> 20
+puts ""
+
+# >> THERE ARE AS WELL MATH CLASSES
+puts Math.sqrt(36) # -> 6.0  => this will return the square root
+puts Math.log(1) # -> 0.0 => This is the logorithmic function
+puts ""
+# <-- WORKING WITH FLOATS AND INTERGER NUMBERS -->
+
+puts 1 + 7 # -> 8
+puts 1.0 + 7 # -> 8.0
+puts 10 / 7 # -> 1
+puts 10 / 7.0 # -> 1.4285714285714286
+puts ""
+
+# <-- GETTING USER INPUT -->
+
+# to get user input we need to use the Termanal (type ruby filename.rb)
+puts "GETTING USER INPUT"
+puts ""
+
+puts "Enter your Name:"
+name = gets
+puts ("Hello " + name)
+puts ""
+# Below will print out two lines
+puts ("Hello " + name + ", you are cool!")
+puts ""
+# Ruby thinks after my enter when I type my name I want it on a new line
+
+puts "Enter your Name:"
+name1 = gets.chomp()
+puts ("Hello " + name1 + ", you are cool!")
+puts ""
+
+puts "Enter your Name:"
+name2 = gets.chomp()
+puts "Enter your age:"
+age = gets.chomp()
+puts ("Hello " + name1 + ", you are " + age)
