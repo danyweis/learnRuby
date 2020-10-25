@@ -60,3 +60,19 @@ def cube3(num)
 end
 
 puts cube3(3)[1] # -> 99
+
+puts ""
+
+def max(num1,num2,num3)
+  if num1 >= num2 and num1 >= num3
+    return num1.to_s
+  elsif num2 >= num3
+    return num2.to_s
+  else
+    return num3.to_s
+  end
+end
+
+puts max(10, 20, 15)
+puts max(30, 20, 15)
+puts max(10, 20, 55)
