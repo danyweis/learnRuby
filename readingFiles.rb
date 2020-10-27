@@ -73,5 +73,5 @@ puts ""
 # can do as well like this
 the_file = File.open("employees.txt", "r")
 puts the_file.read()
-file.close()
+the_file.close()
 # in this case leed to close the file
